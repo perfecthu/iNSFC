@@ -11,7 +11,7 @@
 
 
 
-
+\setCJKfamilyfont{zhkai}[BoldFont={Kaiti SC Bold}]{Kaiti SC} \setCJKfamilyfont{zhsong}[BoldFont={Songti SC Bold}]{Songti SC}
 
 % Cite mark [1] on the top right
 % \newcommand{\citetop}[1]{\textsuperscript{\cite{#1}}}
@@ -38,7 +38,7 @@
     % \setlength{\parskip}{0.5\baselineskip}
     % For xelatex
     \setlength{\baselineskip}{22bp}
-    \indent {\bfseries \NsfcNote{#1}}\NsfcNote{\setmainfont{KaiTi}#2} \vspace{9bp}%
+    \indent {\bfseries \NsfcNote{#1}}\NsfcNote{\setmainfont{STKaiti}#2} \vspace{9bp}%
     % For pdflatex
     % \indent {\bfseries \NsfcNote{#1}}\NsfcNote{#2} %
   \endgroup
@@ -49,7 +49,7 @@
   \setcounter{section}{#1}
   \setcounter{subsection}{0}
   % For xelatex
-  \indent \NsfcNote{\setmainfont{KaiTi} #1．}{\bfseries\NsfcNote{#2}}\NsfcNote{#3}%
+  \indent \NsfcNote{\setmainfont{STHeiti} #1．}{\bfseries\NsfcNote{#2}}\NsfcNote{#3}%
   % For pdflatex
   % \indent \NsfcNote{#1．}{\bfseries\NsfcNote{#2}}\NsfcNote{#3} %
 }
@@ -75,4 +75,3 @@
 \def\cvprssubsect#1{\cvprsubsection*{#1}}
 \def\cvprsubsect#1{\cvprsubsection{\hskip -1em.~#1 \vspace{-0.2em}}}
 \def\subsection{\@ifstar\cvprssubsect\cvprsubsect}
-
